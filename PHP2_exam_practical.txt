@@ -1,0 +1,55 @@
+You are to create this simple website that gives users the ability of hitting each other.
+
+When a character is hit, the HP goes down by 5/hits and the opponent's hp goes up by 3/hits.
+
+The html code is giving, you are to create the core of this application in OOP.
+
+Two classes are demanded:
+
+==CHARACTER CLASS==
+=Properties=
+ID
+Name
+Avatar
+HP
+Last Combo Hit
+hit_count
+
+=Functions=
+Contructor(array)
+Hit(character)
+Getters and Setters for each property
+
+==DB_Manager==
+=Properties=
+Db
+
+=Functions=
+Constructor
+Add_Character(character)
+Update_Character(character)
+Verify_name(name) Return true if exist 
+Get_Character(id) Return character
+Get_All_Characters () Return array of characters
+Update_last_combo_time (id)
+Get_last_combo_time_elapse (id)
+
+=Validations=
+Create Character form
+Name nor avatar cannot be empty
+
+=Punch=
+Both characters must be set in order to punch one another
+Character cannot punch itself
+Character can no longer be hit once dead (hp >= 0)
+Character must wait 1 min (60secs) after their third hit!
+Names cannot duplicate
+
+=Notions in practice=
+Sessions
+Object Oriented Programming
+Posts
+Form 
+Select options
+Hidden fields
+Sql
